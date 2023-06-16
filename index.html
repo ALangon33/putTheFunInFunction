@@ -65,10 +65,15 @@
 			// usr input
 			let stri = prompt("String to capitalize last letter of");
 			console.log(stri);
+			// make string length a variable
+			let striLength = stri.length;
+			console.log(striLength);
 			// cut string
-			let lastLetter = stri.slice(-1,1);
+			let lastLetter = stri.substr(striLength - 1);
 			console.log(lastLetter);
 		};
+
+		lastLetter();
 </script>
 
 

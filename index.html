@@ -8,7 +8,7 @@
 <body>
 	<script>
 	
-//	create function add7() to add 7 to number input by user
+//	create function add7 to add 7 to number input by user
 	function add7() {
 //	assign number variable to value input by user
 		let num = prompt("Number to add 7 to :");
@@ -23,7 +23,7 @@
 //	add7();
 
 
-//	create function multiply() to well... you know
+//	create function multiply to well... you know
 		function multiply() {
 			//	prompt user for variables to multiply
 			let numOne = prompt("First # to Multiply :");
@@ -31,7 +31,7 @@
 			//	create variable as product
 			let product = 0;
 			//	they mean make a loop right?
-			//	dig deep in monkey brain figure out how multiplication works again like it was the very first time
+			//	dig deep in monkey brain figure out how multiplication works again like it was the very first time - emerge victorious
 			for (let i = 0; i < +numOne; i++) {
 				product = product + +numTwo;
 			};
@@ -39,7 +39,25 @@
 				};
 
 //	test multiply()
-				multiply();
+//	multiply();
+
+//	new function: capitalize
+		function capitalize() {
+			// get user input
+			let str = prompt("String to capitalize first letter of");
+			console.log(str);
+			// cut string in two halves to append later
+			let str1 = str.substr(0,1);
+			console.log(str1);
+			let str2 = str.substr(1);
+			console.log(str2);
+			// make first letter uppercase
+			str1 = str1.toUpperCase();
+			console.log(str1);
+			// concatinate strings
+			
+		};
+		capitalize();
 	</script>
 
 

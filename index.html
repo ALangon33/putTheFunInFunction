@@ -7,16 +7,38 @@
 </head>
 <body>
 	<script>
-		function add7() {
-			let num = prompt("Number to add 7 to :");
+	
+//	create function add7() to add 7 to number input by user
+	function add7() {
+//	assign number variable to value input by user
+		let num = prompt("Number to add 7 to :");
 			console.log(num);
-			num = (Number(num) + 7);
+			//	add 7 to converted number variable
+			num = (+num + 7);
 			console.log(num);
+			//	return result to user
 			prompt(num);
 		}; 
+//	test new add7() function
+//	add7();
 
-		add7();
 
+//	create function multiply() to well... you know
+		function multiply() {
+			//	prompt user for variables to multiply
+			let numOne = prompt("First # to Multiply :");
+			let numTwo = prompt("Second # to Multipy :");
+			//	create variable as product
+			let product;
+			//	they mean make a loop right?
+			//	dig deep in monkey brain figure out how multiplication works again like it was the very first time
+			for (let i = 0; i < +numOne; i++) {
+				product = product + numTwo;
+			};
+				};
+
+//	test multiply()
+				multiply();
 	</script>
 
 
